@@ -3,7 +3,10 @@ import bodyp from "body-parser";
 import lodash from "lodash";
 import mongoose from "mongoose";
 const app = express();
-const url = "mongodb+srv://monk:kFGNhwyCK6WN9C9t@cluster0.yrssfds.mongodb.net/Diary?retryWrites=true&w=majority";
+import dotenv from "dotenv";
+dotenv.config();
+var a = process.env.UURL;
+const url = a;
 
 
 mongoose.connect(url).then(() => {
