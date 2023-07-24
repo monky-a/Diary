@@ -5,8 +5,7 @@ import mongoose from "mongoose";
 const app = express();
 import dotenv from "dotenv";
 dotenv.config();
-var a = process.env.UURL;
-const url = a;
+const url = process.env.UURL;
 
 
 mongoose.connect(url).then(() => {
