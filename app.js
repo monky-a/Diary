@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const app = express();
 import dotenv from "dotenv";
 dotenv.config();
-const url = process.env.UURL;
+const url = "mongodb+srv://monk:kFGNhwyCK6WN9C9t@cluster0.yrssfds.mongodb.net/Diary?retryWrites=true&w=majority";
 
 
 mongoose.connect(url).then(() => {
