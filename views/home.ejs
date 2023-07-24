@@ -1,0 +1,10 @@
+<%- include("partials\\header") -%>
+  <h1>Diary</h1>
+  <p><%= homecontent %></p>
+  
+  <% post.forEach(function(letter, index){ %>
+    <h1><%= letter.title %></h1>
+    <p><%= letter.content.substring(0, 100) %> 
+    <a href= <%= letter.titulo %> > read more...</a></p>
+ <% }) %>
+
